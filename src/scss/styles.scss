@@ -1,0 +1,47 @@
+body {
+    background: #fbfffb;
+    font-family: 'Quicksand', sans-serif;
+    color: #101010;
+}
+
+.container {
+    width: 80%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+@import './components/navigation';
+
+/* ***************************************** HERO ************************************ */ 
+
+.hero {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    padding-top: 100px;
+}
+
+.hero__headline {
+    position: absolute;
+    font-family: GT-Super-Display-Medium;
+    font-size: 180px;
+    width: 100%;
+    filter: invert(1);
+    mix-blend-mode: difference;
+}
+
+.hero__image {
+    max-height: 80vh;
+    object-fit: contain;
+}
+
+#hero__trademark {
+    position: absolute;
+    right: 0;
+    text-orientation: mixed;
+    writing-mode: vertical-rl;
+}
+
