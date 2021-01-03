@@ -1,6 +1,17 @@
 # Setup
 
-Used [this](https://wweb.dev/blog/how-to-create-static-website-npm-scripts) to setup template. Uses SASS, Linting, Image minifying, Webpack, Babel and HTML partials.
+Used [this](https://wweb.dev/blog/how-to-create-static-website-npm-scripts) to setup template.
+Makes use of 
+- SASS
+- stylelint
+- browsersync
+- Image minifying
+- Webpack
+- Babel
+- HTML partials (posthtml + htmlnano)
+- GSAP
+- jQuery
+- ESLint
 
 ## Run
 
