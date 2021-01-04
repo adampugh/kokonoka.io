@@ -29,23 +29,31 @@ const reverseColour = () => {
     const whiteRgb = 'rgb(255, 255, 255)';
     const $navigation = $('.navigation');
     const navigationColour = $navigation.css('color');
+    const $navigationToggleBtns = $('.navigation__toggle-btn__one, .navigation__toggle-btn__two');
     
     if (navigationColour === whiteRgb) {
-        $('.navigation__toggle-btn__one, .navigation__toggle-btn__two').delay(2000).animate({ backgroundColor: '#101010'}, 'slow');
+        $navigationToggleBtns.delay(2000).animate({ backgroundColor: '#101010'}, 'slow');
         $navigation.delay(2000).animate({ color: '#101010'}, 'slow')
     } else {
-        $('.navigation__toggle-btn__one, .navigation__toggle-btn__two').animate({ backgroundColor: '#fff'}, 'slow');
+        $navigationToggleBtns.animate({ backgroundColor: '#fff'}, 'slow');
         $navigation.animate({ color: '#fff'}, 'slow')
     }
 }
 
 t1.reverse();
-$(document).on('click', '.navigation__toggle-btn', () => {
+
+const $navigationToggleBtn = $('.navigation__toggle-btn');
+const $navigationMenuLinks = $('.navigation__menu__menu-items ul li a');
+
+const reverseColourAndAnimation = () => {
     reverseColour();
     t1.reversed(!t1.reversed());
+};
+
+$navigationToggleBtn.on('click', () => {
+    reverseColourAndAnimation();
 });
 
-$(document).on('click', 'a', () => {
-    reverseColour();
-    t1.reversed(!t1.reversed());
+$navigationMenuLinks.on('click', () => {
+    reverseColourAndAnimation();
 });
