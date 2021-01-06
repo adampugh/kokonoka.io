@@ -57,3 +57,17 @@ $navigationToggleBtn.on('click', () => {
 $navigationMenuLinks.on('click', () => {
     reverseColourAndAnimation();
 });
+
+const navItems = $('.navigation__menu__menu-items li a');
+const $firstImage = $('.navigation__hover__image1');
+const $secondImage = $('.navigation__hover__image2');
+const $thirdImage = $('.navigation__hover__image3');
+const $fourthImage = $('.navigation__hover__image4');
+
+const images = [$firstImage, $secondImage, $thirdImage, $fourthImage];
+$.each(images, (index, image) => image.hide());
+
+$(navItems[0]).hover(() => $firstImage.fadeIn(1000), () => $firstImage.fadeOut(1000));
+$(navItems[1]).hover(() => $secondImage.fadeIn(1000), () => $secondImage.fadeOut(1000));
+$(navItems[2]).hover(() => $thirdImage.fadeIn(1000), () => $thirdImage.fadeOut(1000));
+$(navItems[3]).hover(() => $fourthImage.fadeIn(1000), () => $fourthImage.fadeOut(1000));
