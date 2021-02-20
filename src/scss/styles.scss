@@ -2,6 +2,7 @@ body {
     background: #fbfffb;
     font-family: 'Quicksand', sans-serif;
     color: #101010;
+    height: 4000px;
 }
 
 .container {
@@ -12,7 +13,7 @@ body {
 
 @import './components/navigation';
 
-/* ***************************************** HERO ************************************ */ 
+/* ***************************************** HERO ************************************ */
 
 .hero {
     min-height: 600px;
@@ -44,4 +45,3 @@ body {
     text-orientation: mixed;
     writing-mode: vertical-rl;
 }
-
