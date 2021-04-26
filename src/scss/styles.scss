@@ -11,10 +11,28 @@ body {
     margin: 0 auto;
 }
 
+.k-button {
+    margin: 40px 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.k-button {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
 @import './components/navigation';
+@import './components/projects';
+@import './components/liquidSlider.scss';
 
 /* ***************************************** HERO ************************************ */
-
 .hero {
     min-height: 600px;
     display: flex;
@@ -22,7 +40,7 @@ body {
     justify-content: center;
     position: relative;
     width: 100%;
-    padding-top: 100px;
+    // padding-top: 100px;
 }
 
 .hero__headline {
