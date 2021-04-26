@@ -16,8 +16,9 @@
 .rain__overlay {
     // background: linear-gradient(0deg, rgba(251, 255, 251, 0) 50%, rgba(251, 255, 251, 1) 90%);
     // background: rgba(22, 1, 46, 0.172);
+    // top: 40vh;
     color: white;
-    top: 0;
+    top: 25vh;
     bottom: 0;
     left: 0;
     right: 0;
@@ -30,7 +31,7 @@
     min-height: 100vh;
     height: 400px;
     z-index: 10;
-    padding-top: 80px;
+    // padding-top: 80px;
 
     h1 {
         font-family: GT-Super-Display-Medium;
@@ -40,7 +41,7 @@
     p {
         padding-top: 40px;
         max-width: 400px;
-        line-height: 20px;
+        // line-height: 20px;
     }
 }
 
@@ -49,4 +50,13 @@
     min-height: 100vh;
     max-height: 100vh;
     object-fit: cover;
+}
+
+#crux-magazine {
+    text-align: right;
+
+    p {
+        padding-top: 40px;
+        max-width: 400px;
+    }
 }

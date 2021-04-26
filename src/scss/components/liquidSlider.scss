@@ -30,21 +30,27 @@
 
     nav a {
         text-decoration: none;
-        position: absolute;
-        top: 46vh;
+        // position: absolute;
+        // top: 46vh;
         z-index: 1;
-        padding: 20px;
+        // padding: 20px;
         transition: 0.3s;
-        background: black;
-        color: white;
+        background: transparent;
+        color: black;
+        // font-family: GT-Super-Display-Medium;
+        // font-size: 28px;
     }
 
     nav a.next {
-        right: 10vw;
+        // right: 10vw;
+        // right: 0;
+        padding-right: 10%;
     }
 
     nav a.prev {
-        left: 10vw;
+        // left: 10vw;
+        // left: 0;
+        padding-left: 10%;
     }
 
     @media screen and (max-width: 52em) {
@@ -52,5 +58,24 @@
             top: auto;
             bottom: 3rem;
         }
+    }
+
+    .liquid-slider__buttons {
+        // border: 1px solid red;
+        position: absolute;
+        top: 46vh;
+        // margin: 0 10%;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .trademark {
+        position: absolute;
+        right: 10%;
+        text-orientation: mixed;
+        writing-mode: vertical-rl;
+        bottom: 20px;
+        color: black;
     }
 }
