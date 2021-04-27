@@ -25,16 +25,21 @@ p {
     padding: 10px 20px;
     border-radius: 5px;
     text-transform: uppercase;
+    background: transparent;
 
     &:hover {
         cursor: pointer;
     }
 }
 
-.k-button {
-    background: transparent;
+.k-button-white {
     color: white;
     border: 1px solid white;
+}
+
+.k-button-black {
+    color: black;
+    border: 1px solid black;
 }
 
 @import './components/navigation';
