@@ -1,6 +1,6 @@
 #liquid-slider {
     width: 100%;
-    height: 100%;
+    // height: 100%;
     margin: 0;
     background: white;
     color: white;
@@ -30,26 +30,17 @@
 
     nav a {
         text-decoration: none;
-        // position: absolute;
-        // top: 46vh;
         z-index: 1;
-        // padding: 20px;
         transition: 0.3s;
         background: transparent;
         color: black;
-        // font-family: GT-Super-Display-Medium;
-        // font-size: 28px;
     }
 
     nav a.next {
-        // right: 10vw;
-        // right: 0;
         padding-right: 10%;
     }
 
     nav a.prev {
-        // left: 10vw;
-        // left: 0;
         padding-left: 10%;
     }
 
@@ -61,10 +52,8 @@
     }
 
     .liquid-slider__buttons {
-        // border: 1px solid red;
         position: absolute;
         top: 46vh;
-        // margin: 0 10%;
         display: flex;
         justify-content: space-between;
         width: 100%;
