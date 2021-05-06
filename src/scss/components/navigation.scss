@@ -16,7 +16,6 @@
 }
 
 .navigation__toggle-btn {
-    // padding-top: 1em;
     width: 40px;
     height: 12px;
     right: 0;
@@ -44,10 +43,8 @@
 
 .navigation__menu {
     z-index: 2;
-    // position: fixed;
     position: absolute;
     background: #101010;
-    // top: 0;
     height: 100vh;
     width: 100%;
     top: -100%;
@@ -67,7 +64,6 @@
         }
 
         a {
-            // color: #fff;
             text-decoration: none;
             font-family: GT-Super-Display-Medium;
             font-size: 100px;
@@ -87,21 +83,6 @@
     li:nth-child(even) {
         padding-left: 10%;
     }
-
-    // li:first-child:hover::before {
-    //     content: '';
-    //     z-index: -1;
-    //     width: 100vw;
-    //     height: 110vh;
-    //     display: block;
-    //     position: absolute;
-    //     top: -200px;
-    //     left: 0;
-    //     background: url(../../images/sun.jpg);
-    //     transition: 1s;
-    //     animation: fade-in 2s ease-in-out;
-    //     overflow: hidden;
-    // }
 }
 
 .navigation__hover {
