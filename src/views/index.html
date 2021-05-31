@@ -37,6 +37,9 @@
     <script>
         const images = ['images/sleep4.jpg', 'images/swoon6.jpg', 'images/swoon1.jpg'];
         const texts = [['SLEEP'], ['SWOON EDITIONS'], ['CRUX MAGAZINE']]
+        const isMobile = screen.width < 800;
+        const textTitleSizeResponsive = isMobile ? 100 : 144;
+
 
         rgbKineticSlider = new rgbKineticSlider({
             slideImages: images,
@@ -57,7 +60,7 @@
                 imagesRgbIntensity: 4,
                 navImagesRgbIntensity: 120,
                 textsDisplay: true,
-                textTitleSize: 144,
+                textTitleSize: textTitleSizeResponsive,
                 textsTiltEffect: true,
                 googleFonts: ["Playfair Display:400"],
                 textsRgbEffect: true,
@@ -65,20 +68,7 @@
         })
     </script>
 
-    <section class="container">
-        <div class="hero">
-            <h1 class="hero__headline">Creative</br> Digital</br> Agency</h1>
-            <img class="hero__image" src="/images/art.jpg" alt="red sun">
-            <p class="hero__text">
-                Kokonoka is dedicated to providing quality designs to all clients ensuring businesses are well represented and set to succeed. Contact us today to see how we could help you and your company out.
-                Kokonoka is dedicated to providing quality designs to all clients ensuring businesses are well represented and set to succeed. Contact us today to see how we could help you and your company out.
-                <br/>
-                <br/>
-                <br />
-                Kokonoka is dedicated to providing quality designs to all clients ensuring businesses are well represented and set to succeed. Contact us today to see how we could help you and your company out.
-            </p>
-        </div>
-    </section>
+    <module href="/components/hero.html"></module>
 
     <module href="/components/projects.html"></module> 
     <module href="/components/footer.html"></module>

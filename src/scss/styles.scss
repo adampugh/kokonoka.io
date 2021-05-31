@@ -7,11 +7,17 @@ body {
 
 h1 {
     font-family: GT-Super-Display-Medium;
-    font-size: 180px;
+    font-size: 120px;
+
+    @media (min-width: 1200px) {
+        font-size: 180px;
+    }
 }
 
 p {
     line-height: 25px;
+    font-size: 4vw;
+    // font-size: 12px;
 }
 
 .container {
@@ -45,30 +51,40 @@ p {
 @import './components/navigation';
 @import './components/projects';
 @import './components/liquidSlider.scss';
+@import './components/footer.scss';
 
 /* ***************************************** HERO ************************************ */
 .hero {
     min-height: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
     position: relative;
     width: 100%;
     padding: 280px 0;
+
+    @media (min-width: 1200px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .hero__headline {
-    position: absolute;
-    font-family: GT-Super-Display-Medium;
-    font-size: 180px;
-    width: 100%;
-    filter: invert(1);
-    mix-blend-mode: difference;
+    @media (min-width: 1200px) {
+        position: absolute;
+        width: 100%;
+        filter: invert(1);
+        mix-blend-mode: difference;
+    }
 }
 
 .hero__image {
-    max-height: 80vh;
-    object-fit: contain;
+    display: none;
+
+    @media (min-width: 1200px) {
+        display: block;
+        max-height: 80vh;
+        object-fit: contain;
+    }
 }
 
 #hero__trademark {
@@ -79,7 +95,14 @@ p {
 }
 
 .hero__text {
-    position: absolute;
-    max-width: 400px;
-    right: 0;
+    padding-top: 40px;
+
+    @media (min-width: 1200px) {
+        padding: 0;
+        position: absolute;
+        max-width: 400px;
+        right: 0;
+        filter: invert(1);
+        mix-blend-mode: difference;
+    }
 }

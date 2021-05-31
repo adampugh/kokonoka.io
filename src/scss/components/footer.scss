@@ -1,0 +1,40 @@
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 80px 0;
+    font-weight: bolder;
+}
+
+.footer__contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 40px;
+
+    .footer__contact__address {
+        padding-top: 40px;
+
+        a,
+        a:hover,
+        a:focus,
+        a:active {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        h2 {
+            font-weight: bolder;
+        }
+
+        .address {
+            padding-top: 40px;
+        }
+    }
+
+    .footer__contact__map {
+        max-width: 400px;
+
+        img {
+            max-width: 100%;
+        }
+    }
+}

@@ -25,11 +25,6 @@
     height: 400px;
     z-index: 10;
 
-    h1 {
-        font-family: GT-Super-Display-Medium;
-        font-size: 180px;
-    }
-
     p {
         padding-top: 40px;
         max-width: 400px;
@@ -82,9 +77,12 @@
 
     p {
         padding-top: 40px;
-        max-width: 400px;
         text-align: left;
-        padding-left: calc(100% - 400px);
+
+        @media (min-width: 1200px) {
+            max-width: 400px;
+            padding-left: calc(100% - 400px);
+        }
     }
 
     .crux-magazine__images {
