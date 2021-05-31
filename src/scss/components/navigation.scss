@@ -3,16 +3,33 @@
     display: flex;
     justify-content: space-between;
     width: 80%;
-    color: #101010;
+    color: white;
     z-index: 100;
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 40px auto;
+
+    @media (min-width: 1000px) {
+        color: #101010;
+    }
+}
+
+.navigation__languages {
+    font-size: 30px;
+
+    @media (min-width: 1000px) {
+        font-size: unset;
+    }
 }
 
 .navigation__logo {
     font-family: 'Quicksand', sans-serif;
     letter-spacing: 20px;
     color: white;
+    font-size: 30px;
+
+    @media (min-width: 1000px) {
+        font-size: unset;
+    }
 }
 
 .navigation__toggle-btn {
@@ -27,17 +44,29 @@
 
     .navigation__toggle-btn__one {
         position: absolute;
-        width: 40px;
-        height: 2px;
-        background: #101010;
+        width: 60px;
+        height: 8px;
+        background: white;
+
+        @media (min-width: 1000px) {
+            background: #101010;
+            width: 40px;
+            height: 2px;
+        }
     }
 
     .navigation__toggle-btn__two {
         position: absolute;
-        width: 40px;
-        height: 2px;
-        background: #101010;
+        width: 60px;
+        height: 8px;
+        background: white;
         margin-top: 12px;
+
+        @media (min-width: 1000px) {
+            background: #101010;
+            width: 40px;
+            height: 2px;
+        }
     }
 }
 

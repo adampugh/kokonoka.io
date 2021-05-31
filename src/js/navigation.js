@@ -54,7 +54,9 @@ const $navigationToggleBtn = $('.navigation__toggle-btn');
 const $navigationMenuLinks = $('.navigation__menu__menu-items ul li a');
 
 const reverseColourAndAnimation = () => {
-    reverseColour();
+    if (screen.width > 1000) {
+        reverseColour();
+    }
     t1.reversed(!t1.reversed());
 };
 
