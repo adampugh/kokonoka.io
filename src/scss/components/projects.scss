@@ -1,10 +1,15 @@
 #rain {
+    display: none;
     background: rgb(251, 255, 251);
     background: linear-gradient(0deg, rgba(251, 255, 251, 1) 0%, rgba(92, 92, 92, 0) 100%);
     position: relative;
     margin-top: 140px;
     height: 1200px;
     margin-bottom: 200px;
+
+    @media (min-width: 1200px) {
+        display: block;
+    }
 }
 
 #rain-video {
@@ -70,6 +75,24 @@
     }
 }
 
+#sleep--mobile {
+    padding-bottom: 200px;
+
+    p {
+        padding-top: 40px;
+    }
+
+    .sleep--mobile__img {
+        img {
+            width: 100%;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        display: none;
+    }
+}
+
 #crux-magazine,
 #swoon-editions {
     text-align: right;
@@ -80,37 +103,49 @@
         text-align: left;
 
         @media (min-width: 1200px) {
-            max-width: 400px;
+            // max-width: 400px;
             padding-left: calc(100% - 400px);
         }
     }
 
     .crux-magazine__images {
-        display: flex;
         max-width: 100%;
         padding-bottom: 200px;
+
+        @media (min-width: 1200px) {
+            display: flex;
+        }
     }
 
     .crux-magazine__image1 {
-        max-width: 500px;
         object-fit: contain;
-        margin-right: 10%;
 
         img {
             width: 100%;
         }
+
+        @media (min-width: 1200px) {
+            margin-right: 10%;
+            max-width: 500px;
+        }
     }
 
     .crux-magazine__image2 {
-        max-width: 630px;
         width: 100%;
         position: relative;
 
         img {
             padding-top: 130px;
             width: 100%;
-            position: absolute;
-            right: 0;
+        }
+
+        @media (min-width: 1200px) {
+            max-width: 630px;
+
+            img {
+                position: absolute;
+                right: 0;
+            }
         }
     }
 }

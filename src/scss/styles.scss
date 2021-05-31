@@ -2,7 +2,7 @@ body {
     background: #fbfffb;
     font-family: 'Quicksand', sans-serif;
     color: #101010;
-    height: 4000px;
+    // height: 4000px;
 }
 
 h1 {
@@ -16,13 +16,16 @@ h1 {
 
 p {
     line-height: 25px;
-    font-size: 4vw;
-    // font-size: 12px;
+    font-size: 12px;
+
+    @media only screen and (min-width: 1000px) {
+        font-size: 16px;
+    }
 }
 
 .container {
     width: 80%;
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -54,14 +57,27 @@ p {
 @import './components/footer.scss';
 
 /* ***************************************** HERO ************************************ */
+#hero--wrapper {
+    .container {
+        width: 100%;
+
+        @media (min-width: 1200px) {
+            width: 80%;
+        }
+    }
+}
+
 .hero {
     min-height: 600px;
-
+    max-width: 100%;
     position: relative;
     width: 100%;
     padding: 280px 0;
+    box-sizing: border-box;
+    font-size: 0;
 
     @media (min-width: 1200px) {
+        padding: 280px 0;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -69,7 +85,10 @@ p {
 }
 
 .hero__headline {
+    padding-left: 10%;
+
     @media (min-width: 1200px) {
+        padding: 0;
         position: absolute;
         width: 100%;
         filter: invert(1);
@@ -95,7 +114,7 @@ p {
 }
 
 .hero__text {
-    padding-top: 40px;
+    padding: 40px 10% 0 10%;
 
     @media (min-width: 1200px) {
         padding: 0;
