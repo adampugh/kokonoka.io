@@ -11,6 +11,7 @@
     <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/EasePack.min.js"></script>
+    
 
     <!-- TweenMax -->
     <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/TweenMax.min.js"></script>
@@ -28,11 +29,13 @@
     <link rel="stylesheet" href="/index.css">
 </head>
 
-<body>
-    <module href="/components/navigation.html"></module>
+<body data-scroll-container>
+
+    
+    <module data-scroll-section href="/components/navigation.html"></module>
 
     <!-- break script into module -->
-    <module href="/components/liquidSlider.html"></module>
+    <module data-scroll-section href="/components/liquidSlider.html"></module>
 
     <script>
         const images = ['images/sleep4.jpg', 'images/swoon6.jpg', 'images/swoon1.jpg'];
@@ -68,9 +71,9 @@
         })
     </script>
 
-    <module href="/components/hero.html"></module>
+    <module data-scroll-section href="/components/hero.html"></module>
 
-    <module href="/components/projects.html"></module>
+    <module data-scroll-section href="/components/projects.html"></module>
     
     <script src="./bundle.js"></script>
 </body>

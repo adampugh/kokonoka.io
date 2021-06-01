@@ -1,13 +1,17 @@
+html {
+    // scroll-behavior: smooth;
+}
+
 body {
     background: #fbfffb;
     font-family: 'Quicksand', sans-serif;
     color: #101010;
+    // height: 1084px !important;
 }
 
 h1 {
     font-family: GT-Super-Display-Medium;
     font-size: 120px;
-
     @media (min-width: 1200px) {
         font-size: 180px;
     }
@@ -74,6 +78,7 @@ p {
     padding: 280px 0;
     box-sizing: border-box;
     font-size: 0;
+    background: white;
 
     @media (min-width: 1200px) {
         padding: 280px 0;

@@ -1,3 +1,3 @@
-import './scripts';
 import './navigation';
-import './liquid-image';
+import './smoothscroll';
+// import './liquid-image';

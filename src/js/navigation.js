@@ -1,3 +1,5 @@
+/*global TimelineMax, Expo, $*/
+
 const t1 = new TimelineMax({ paused: true });
 
 t1.to('.navigation__toggle-btn__one', 0.6, {
@@ -35,14 +37,14 @@ const reverseColour = () => {
     const $navigation = $('.navigation');
     const navigationColour = $navigation.css('color');
     const $navigationToggleBtns = $('.navigation__toggle-btn__one, .navigation__toggle-btn__two');
-    const $body = $('body');
+    // const $body = $('body');
 
     if (navigationColour === whiteRgb) {
-        $body.css('overflow-y', 'scroll');
+        // $body.css('overflow-y', 'scroll');
         $navigationToggleBtns.delay(2000).animate({ backgroundColor: '#101010' }, 'slow');
         $navigation.delay(2000).animate({ color: '#101010' }, 'slow');
     } else {
-        $body.css('overflow-y', 'hidden');
+        // $body.css('overflow-y', 'hidden');
         $navigationToggleBtns.animate({ backgroundColor: '#fff' }, 'slow');
         $navigation.animate({ color: '#fff' }, 'slow');
     }
