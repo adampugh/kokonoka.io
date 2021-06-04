@@ -11,8 +11,13 @@ body {
 
 h1 {
     font-family: GT-Super-Display-Medium;
-    font-size: 120px;
-    @media (min-width: 1200px) {
+    font-size: 100px;
+
+    @media (min-width: 1000px) {
+        font-size: 140px;
+    }
+
+    @media (min-width: 1400px) {
         font-size: 180px;
     }
 }
@@ -54,78 +59,28 @@ p {
     border: 1px solid black;
 }
 
+.heading-image-clip {
+    background-image: url('../images/art.jpg');
+    background-position: bottom;
+    background-repeat: repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    white-space: nowrap;
+    padding: 40px 0;
+}
+
+.vertical-header {
+    @media (min-width: 800px) {
+        writing-mode: vertical-lr;
+        position: absolute;
+    }
+}
+
 @import './components/navigation';
 @import './components/projects';
 @import './components/liquidSlider.scss';
 @import './components/footer.scss';
-
-/* ***************************************** HERO ************************************ */
-#hero--wrapper {
-    .container {
-        width: 100%;
-
-        @media (min-width: 1200px) {
-            width: 80%;
-        }
-    }
-}
-
-.hero {
-    min-height: 600px;
-    max-width: 100%;
-    position: relative;
-    width: 100%;
-    padding: 280px 0;
-    box-sizing: border-box;
-    font-size: 0;
-    background: white;
-
-    @media (min-width: 1200px) {
-        padding: 280px 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-}
-
-.hero__headline {
-    padding-left: 10%;
-
-    @media (min-width: 1200px) {
-        padding: 0;
-        position: absolute;
-        width: 100%;
-        filter: invert(1);
-        mix-blend-mode: difference;
-    }
-}
-
-.hero__image {
-    display: none;
-
-    @media (min-width: 1200px) {
-        display: block;
-        max-height: 80vh;
-        object-fit: contain;
-    }
-}
-
-#hero__trademark {
-    position: absolute;
-    right: 0;
-    text-orientation: mixed;
-    writing-mode: vertical-rl;
-}
-
-.hero__text {
-    padding: 40px 10% 0 10%;
-
-    @media (min-width: 1200px) {
-        padding: 0;
-        position: absolute;
-        max-width: 400px;
-        right: 0;
-        filter: invert(1);
-        mix-blend-mode: difference;
-    }
-}
+@import './components/hero.scss';
+@import './projects.scss';

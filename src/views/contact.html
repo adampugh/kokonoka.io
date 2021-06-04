@@ -28,12 +28,39 @@
     <link rel="stylesheet" href="/index.css">
 </head>
 
-<body data-scroll-container id="projects-page">
+<body data-scroll-container>
     <module href="/components/navigation.html"></module>
-    <div data-scroll-section style="padding: 150px 0 200px;" class="container" >
-        <h1 data-scroll class="vertical-header">Projects</h1>
-    </div>
-    <module href="/components/projects.html"></module>
+    <section data-scroll-section id="projects" >
+        <div data-scroll id="contact" class="container" data-scroll>
+            <h1 style="padding: 150px 0 100px;">Contact</h1>
+            <div class="footer__contact">
+                <div class="footer__contact__address">
+                    <div class="email">
+                        <h2>Email</h2>
+                        <p><a href="mailto:contact@kokonoka.io">contact@kokonoka.io</a></p>
+                    </div>
+                    <div class="address">
+                        <h2>London Office</h2>
+                        <p>1 Maltby Street</p>
+                        <p>Bermondsey</p>
+                        <p>London</p>
+                        <p>SE1 5NS</p>
+                    </div>
+                    <div class="address">
+                        <h2>Osaka Office</h2>
+                        <p>1-1大深町</p>
+                        <p>北区</p>
+                        <p>大阪市</p>
+                        <p>530-0011</p>
+                    </div>
+                </div>
+                <div class="footer__contact__map">
+                    <img src="../../images/map.png" alt="office map">
+                </div>
+            </div>
+        </div>
+        <footer data-scroll>© 2021 KOKONOKA</footer>
+    </section>
 
     <script src="./bundle.js"></script>
 </body>
