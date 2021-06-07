@@ -29,13 +29,13 @@
     <link rel="stylesheet" href="/index.css">
 </head>
 
-<body data-scroll-container>
+<body>
 
     
-    <module data-scroll-section href="/components/navigation.html"></module>
+    <module href="/components/navigation.html"></module>
 
     <!-- break script into module -->
-    <module data-scroll-section href="/components/liquidSlider.html"></module>
+    <module href="/components/liquidSlider.html"></module>
 
     <script>
         const images = ['images/sleep4.jpg', 'images/swoon6.jpg', 'images/swoon1.jpg'];
@@ -71,9 +71,15 @@
         })
     </script>
 
-    <module data-scroll-section href="/components/hero.html"></module>
+    <module href="/components/hero.html"></module>
+    <module href="/components/projects.html"></module>
 
-    <module data-scroll-section href="/components/projects.html"></module>
+    <script>
+        console.log('running');
+        gsap.from('.navigation', {
+            opacity: 0, duration: 1, y: -50, delay: 2, stagger: 1
+        })
+    </script>
     
     <script src="./bundle.js"></script>
 </body>
