@@ -63,6 +63,7 @@ p {
     background-size: cover;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    background-clip: text; // added for linting
     white-space: nowrap;
     padding: 40px 0;
 }
